@@ -11,6 +11,6 @@ v_quackquack = "5.0.0"
 v_memefi = "5.0.0"
 v_yescoin = "5.0.0"
 
-date_dailycombo = "01/07/2024"
+date_dailycombo = "03/07/2024"
 morse_hamster = "FUD"
-list_combo = ["youtube","sports_integration","hamster_youtube_gold_button"]
+list_combo = ["instagram","trading_bots"]
