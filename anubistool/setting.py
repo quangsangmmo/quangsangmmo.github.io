@@ -11,6 +11,6 @@ v_quackquack = "5.0.0"
 v_memefi = "5.0.0"
 v_yescoin = "5.0.0"
 
-date_dailycombo = "04/07/2024/19/00/00"
+date_dailycombo = "05/07/2024/19/00/00"
 morse_hamster = "ORACLE"
-list_combo = ["sec_transparancy","web3_game_con","gamefi_tokens"]
+list_combo = ["ux_ui_team","cx_hub_istanbul"]
