@@ -11,6 +11,6 @@ v_quackquack = "5.0.0"
 v_memefi = "5.0.0"
 v_yescoin = "5.0.0"
 
-date_dailycombo = "05/07/2024/19/00/00"
-morse_hamster = "STAKE"
-list_combo = ["ux_ui_team","cx_hub_istanbul"]
+date_dailycombo = "07/07/2024/19/00/00"
+morse_hamster = "FIAT"
+list_combo = ["staking","licence_europe"]
