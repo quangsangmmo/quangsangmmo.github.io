@@ -1,18 +1,22 @@
 {
   "ACCCOUNT_1": {
     "proxy": "",
+    "type_proxy": "http",
     "user-agent": ""
   },
   "ACCCOUNT_2": {
     "proxy": "",
+    "type_proxy": "http",
     "user-agent": ""
   },
   "ACCCOUNT_3": {
     "proxy": "",
+    "type_proxy": "http",
     "user-agent": ""
   },
   "ACCCOUNT_4": {
     "proxy": "",
+    "type_proxy": "http",
     "user-agent": ""
   },
   "ACCCOUNT_5": {
@@ -21,22 +25,27 @@
   },
   "ACCCOUNT_6": {
     "proxy": "",
+    "type_proxy": "http",
     "user-agent": ""
   },
   "ACCCOUNT_7": {
     "proxy": "",
+    "type_proxy": "http",
     "user-agent": ""
   },
   "ACCCOUNT_8": {
     "proxy": "",
+    "type_proxy": "http",
     "user-agent": ""
   },
   "ACCCOUNT_9": {
     "proxy": "",
+    "type_proxy": "http",
     "user-agent": ""
   },
   "ACCCOUNT_10": {
     "proxy": "",
+    "type_proxy": "http",
     "user-agent": ""
   }
 }
