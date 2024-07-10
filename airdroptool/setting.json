@@ -6,13 +6,13 @@
   "v_cex": "2.0.1",
   "v_bunny": "2.0.1",
   "v_wormfare": "2.0.1",
-  "v_timefarm": "3.0.0",
+  "v_timefarm": "4.0.0",
   "v_tapswap": "2.0.1",
   "v_quackquack": "2.0.1",
   "v_memefi": "2.0.1",
   "v_yescoin": "2.0.1",
-  "date_expired": "05/07/2024/19/00/00",
+  "date_expired": "11/07/2024/19/00/00",
   "morse_hamster": "STAKE",
-  "list_combo": ["ux_ui_team","cx_hub_istanbul"],
+  "list_combo": ["margin_trading_x30","oracle","sports_integration_0907"],
   "answer_quest": "31/10/2008"
 }
