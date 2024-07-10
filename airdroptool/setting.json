@@ -11,7 +11,8 @@
   "v_quackquack": "2.0.1",
   "v_memefi": "2.0.1",
   "v_yescoin": "2.0.1",
-  "date_dailycombo": "05/07/2024/19/00/00",
+  "date_expired": "05/07/2024/19/00/00",
   "morse_hamster": "STAKE",
-  "list_combo": ["ux_ui_team","cx_hub_istanbul"]
+  "list_combo": ["ux_ui_team","cx_hub_istanbul"],
+  "answer_quest": "31/10/2008"
 }
