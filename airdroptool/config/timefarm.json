@@ -1,3 +1,4 @@
+//Authorization của Timefarm chỉ có thể tồn tại trong 1 ngày nên ae phải thay hằng ngày mới không bị lỗi nhé
 [
   {
     "STT_ACCOUNT": "ACCCOUNT_1",

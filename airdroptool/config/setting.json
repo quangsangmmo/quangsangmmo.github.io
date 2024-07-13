@@ -1,3 +1,6 @@
+//Nhập proxy có định dạng IP:PORT: USERNAME:PASSWORD vào phần "proxy" khi mua về thường có sẵn định dạng như vậy ae nhé
+//Nhập loại proxy vào phần "type_proxy" mặc định mình để là http của ae nào là socks5 thì sửa http thành socks5 nhé
+//Ae vào trang https://iplogger.org/useragents/ để random user-agent và nhập vào để tăng độ an toàn khi chạy tool nhé
 {
   "ACCCOUNT_1": {
     "proxy": "",
