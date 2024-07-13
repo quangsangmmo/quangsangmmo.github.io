@@ -24,6 +24,7 @@
   },
   "ACCCOUNT_5": {
     "proxy": "",
+    "type_proxy": "http",
     "user-agent": ""
   },
   "ACCCOUNT_6": {
