@@ -1,6 +1,6 @@
 {
-  "v_airdroptool": "5.0.4",
-  "v_function": "6.0.2",
+  "v_airdroptool": "5.0.5",
+  "v_function": "6.0.3",
   "v_hamster": "7.0.2",
   "v_gemz": "5.0.0",
   "v_dotcoin": "5.0.0",
@@ -11,7 +11,7 @@
   "v_tapswap": "5.0.0",
   "v_quackquack": "5.0.0",
   "v_memefi": "5.0.0",
-  "v_yescoin": "5.0.0",
+  "v_yescoin": "#5.0.0",
   "v_bump": "5.0.1",
   "v_cyber_finance": "1.0.0",
   "v_djdog": "1.0.0",

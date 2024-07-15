@@ -1,43 +1,43 @@
-//AE NHẬP URL CÓ DẠNG "https://api.djdog.io/telegram/login?query_id" MỞ NHẬT KÝ MẠNG LÊN LÀ LẤY ĐƯỢC LUÔN KHÔNG CẦN PHẢI DÙNG BLACKCANARY
+//VÀO LINK API BẤT KỲ VÀ LẤY AUTHORIZATION Ở PHẦN REQUEST > HEADERS
 [
   {
     "STT_ACCOUNT": "ACCCOUNT_1",
-    "URL": "thay_thế_bằng_url"
+    "AUTHORIZATION": "Bearer eyJ0b2tlblR5cGUiOiJhY2Nlc3NUb2tlbiIsImFsZyI6IkhTNTEyIn0.eyJqdGkiOiI4MTc1MjNiZS04ZTFhLTQzZWQtYjExYi1iNWEzYjIwZTVmZjYiLCJzdWIiOiIxMzY1MTYwIiwiaXNzIjoiaGFzaHBhc3MiLCJhdXRoIjoiVVNFUiIsInVzZXJJZCI6MTM2NTE2MCwiZXhwIjoxNzIxNjU0OTcyfQ.H89N_BQfiyhGCLxhiJ4UTvmb7vWxolJUiv6X-2yvXVFcIew2ufYXHkV7kLWCFvp5ZlzzCAhWlMCwx3_CDc1uUQ"
   },
   {
     "STT_ACCOUNT": "ACCCOUNT_2",
-    "URL": "thay_thế_bằng_url"
+    "AUTHORIZATION": "query_id=AAEve_BqAgAAAC978GpYDEoX&user=%7B%22id%22%3A6089112367%2C%22first_name%22%3A%22Quang%20S%C3%A1ng%20%F0%9F%A7%91%E2%80%8D%F0%9F%92%BB%22%2C%22last_name%22%3A%22%22%2C%22username%22%3A%22quangsangmmo%22%2C%22language_code%22%3A%22vi%22%2C%22allows_write_to_pm%22%3Atrue%7D&auth_date=1721027488&hash=a329d904d03f40c162c1d21380479e2658bf33dee4069390758b7ca57cfa4a41"
   },
   {
     "STT_ACCOUNT": "ACCCOUNT_3",
-    "URL": "thay_thế_bằng_url"
+    "AUTHORIZATION": "thay_thế_bằng_authorization"
   },
   {
     "STT_ACCOUNT": "ACCCOUNT_4",
-    "URL": "thay_thế_bằng_url"
+    "AUTHORIZATION": "thay_thế_bằng_authorization"
   },
   {
     "STT_ACCOUNT": "ACCCOUNT_5",
-    "URL": "thay_thế_bằng_url"
+    "AUTHORIZATION": "thay_thế_bằng_authorization"
   },
   {
     "STT_ACCOUNT": "ACCCOUNT_6",
-    "URL": "thay_thế_bằng_url"
+    "AUTHORIZATION": "thay_thế_bằng_authorization"
   },
   {
     "STT_ACCOUNT": "ACCCOUNT_7",
-    "URL": "thay_thế_bằng_url"
+    "AUTHORIZATION": "thay_thế_bằng_authorization"
   },
   {
     "STT_ACCOUNT": "ACCCOUNT_8",
-    "URL": "thay_thế_bằng_url"
+    "AUTHORIZATION": "thay_thế_bằng_authorization"
   },
   {
     "STT_ACCOUNT": "ACCCOUNT_9",
-    "URL": "thay_thế_bằng_url"
+    "AUTHORIZATION": "thay_thế_bằng_authorization"
   },
   {
     "STT_ACCOUNT": "ACCCOUNT_10",
-    "URL": "thay_thế_bằng_url"
+    "AUTHORIZATION": "thay_thế_bằng_authorization"
   }
 ]
