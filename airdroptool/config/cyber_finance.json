@@ -1,0 +1,43 @@
+//AE NHẬP DATA THÌ XOÁ GIÚP MÌNH NỘI DUNG VÀ CẢ DẤU "" ĐI THÌ TOOL MỚI CHẠY ĐƯỢC NHÉ
+[
+  {
+    "STT_ACCOUNT": "ACCCOUNT_1",
+    "DATA": "thay_thế_bằng_data"
+  },
+  {
+    "STT_ACCOUNT": "ACCCOUNT_2",
+    "DATA": "thay_thế_bằng_data"
+  },
+  {
+    "STT_ACCOUNT": "ACCCOUNT_3",
+    "DATA": "thay_thế_bằng_data"
+  },
+  {
+    "STT_ACCOUNT": "ACCCOUNT_4",
+    "DATA": "thay_thế_bằng_data"
+  },
+  {
+    "STT_ACCOUNT": "ACCCOUNT_5",
+    "DATA": "thay_thế_bằng_data"
+  },
+  {
+    "STT_ACCOUNT": "ACCCOUNT_6",
+    "DATA": "thay_thế_bằng_data"
+  },
+  {
+    "STT_ACCOUNT": "ACCCOUNT_7",
+    "DATA": "thay_thế_bằng_data"
+  },
+  {
+    "STT_ACCOUNT": "ACCCOUNT_8",
+    "DATA": "thay_thế_bằng_data"
+  },
+  {
+    "STT_ACCOUNT": "ACCCOUNT_9",
+    "DATA": "thay_thế_bằng_data"
+  },
+  {
+    "STT_ACCOUNT": "ACCCOUNT_10",
+    "DATA": "thay_thế_bằng_data"
+  }
+]
