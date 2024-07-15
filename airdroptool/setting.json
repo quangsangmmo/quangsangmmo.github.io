@@ -1,5 +1,5 @@
 {
-  "v_airdroptool": "5.0.3",
+  "v_airdroptool": "5.0.4",
   "v_function": "6.0.2",
   "v_hamster": "7.0.2",
   "v_gemz": "5.0.0",
@@ -14,6 +14,7 @@
   "v_yescoin": "5.0.0",
   "v_bump": "5.0.1",
   "v_cyber_finance": "1.0.0",
+  "v_djdog": "1.0.0",
   "date_expired": "15/07/2024/19/00/00",
   "morse_hamster": "MERKLE",
   "list_combo": ["youtube","anti_money_loundering","sports_integration_1407"],

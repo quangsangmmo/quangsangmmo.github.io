@@ -1,0 +1,43 @@
+//AE NHẬP URL CÓ DẠNG "https://api.djdog.io/telegram/login?query_id" MỞ NHẬT KÝ MẠNG LÊN LÀ LẤY ĐƯỢC LUÔN KHÔNG CẦN PHẢI DÙNG BLACKCANARY
+[
+  {
+    "STT_ACCOUNT": "ACCCOUNT_1",
+    "URL": "thay_thế_bằng_url"
+  },
+  {
+    "STT_ACCOUNT": "ACCCOUNT_2",
+    "URL": "thay_thế_bằng_url"
+  },
+  {
+    "STT_ACCOUNT": "ACCCOUNT_3",
+    "URL": "thay_thế_bằng_url"
+  },
+  {
+    "STT_ACCOUNT": "ACCCOUNT_4",
+    "URL": "thay_thế_bằng_url"
+  },
+  {
+    "STT_ACCOUNT": "ACCCOUNT_5",
+    "URL": "thay_thế_bằng_url"
+  },
+  {
+    "STT_ACCOUNT": "ACCCOUNT_6",
+    "URL": "thay_thế_bằng_url"
+  },
+  {
+    "STT_ACCOUNT": "ACCCOUNT_7",
+    "URL": "thay_thế_bằng_url"
+  },
+  {
+    "STT_ACCOUNT": "ACCCOUNT_8",
+    "URL": "thay_thế_bằng_url"
+  },
+  {
+    "STT_ACCOUNT": "ACCCOUNT_9",
+    "URL": "thay_thế_bằng_url"
+  },
+  {
+    "STT_ACCOUNT": "ACCCOUNT_10",
+    "URL": "thay_thế_bằng_url"
+  }
+]
