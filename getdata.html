@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Modifier and Embedder</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+        iframe {
+            width: 100%;
+            height: 90%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="urlInput" placeholder="Enter URL" style="width: 80%; padding: 10px; margin-bottom: 20px;">
+        <button onclick="modifyUrlAndEmbed()">Submit</button>
+        <iframe id="resultFrame" style="display:none;"></iframe>
+    </div>
+
+    <script>
+        function modifyUrlAndEmbed() {
+            const input = document.getElementById('urlInput').value;
+            const url = new URL(input);
+            const params = new URLSearchParams(url.search);
+
+            if (params.has('tgWebAppPlatform')) {
+                params.set('tgWebAppPlatform', 'android');
+            }
+
+            url.search = params.toString();
+            const modifiedUrl = url.toString();
+
+            const iframe = document.getElementById('resultFrame');
+            iframe.style.display = 'block';
+            iframe.src = modifiedUrl;
+        }
+    </script>
+</body>
+</html>
