@@ -3,62 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Embed URL</title>
+    <title>Tạo DATA từ URL</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
             display: flex;
-            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             height: 100vh;
             margin: 0;
         }
-        #container {
-            padding: 10px;
+
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
-        #urlInput {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            font-size: 16px;
+
+        h1 {
+            margin-bottom: 20px;
         }
-        #embedButton {
+
+        input {
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
             padding: 10px 20px;
-            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            background-color: #4CAF50;
+            color: white;
             cursor: pointer;
         }
-        #iframeContainer {
-            flex-grow: 1;
+
+        button:hover {
+            background-color: #45a049;
         }
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
+
+        pre {
+            text-align: left;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
         }
     </style>
 </head>
 <body>
-    <div id="container">
-        <input type="text" id="urlInput" placeholder="Enter URL">
-        <button id="embedButton">Nhúng</button>
+    <div class="container">
+        <h1>URL Decoder</h1>
+        <input type="text" id="urlInput" placeholder="Nhập URL ở đây">
+        <button onclick="decodeURL()">Decode URL</button>
+        <pre id="result"></pre>
     </div>
-    <div id="iframeContainer"></div>
-
     <script>
-        document.getElementById('embedButton').addEventListener('click', function() {
-            let url = document.getElementById('urlInput').value.trim();
+        function decodeURL() {
+            const urlInput = document.getElementById('urlInput').value;
+            const result = document.getElementById('result');
+            
+            try {
+                const parsedUrl = new URL(urlInput);
+                const params = new URLSearchParams(parsedUrl.hash.slice(1));
+                const tgWebAppData = params.get('tgWebAppData');
+                const decodedData = decodeURIComponent(decodeURIComponent(tgWebAppData));
+                const queryParams = new URLSearchParams(decodedData);
+                const userData = queryParams.get('user');
+                const decodedUserData = decodeURIComponent(userData);
+                const userJson = JSON.parse(decodedUserData);
 
-            // Thêm https:// nếu thiếu
-            if (!url.startsWith('http://') && !url.startsWith('https://')) {
-                url = 'https://' + url;
+                const resultJson = {
+                    uid: userJson.id,
+                    first_name: userJson.first_name,
+                    last_name: userJson.last_name || "",
+                    username: userJson.username,
+                    tg_login_params: tgWebAppData
+                };
+
+                result.textContent = JSON.stringify(resultJson, null, 2);
+            } catch (error) {
+                result.textContent = 'Error decoding URL. Please check the input URL.';
             }
-
-            // Thay thế tgWebAppPlatform=web hoặc tgWebAppPlatform=weba bằng tgWebAppPlatform=android
-            url = url.replace(/tgWebAppPlatform=web|tgWebAppPlatform=weba/g, 'tgWebAppPlatform=android');
-
-            // Tạo iframe và nhúng URL đã chỉnh sửa
-            const iframeContainer = document.getElementById('iframeContainer');
-            iframeContainer.innerHTML = `<iframe src="${url}"></iframe>`;
-        });
+        }
     </script>
 </body>
 </html>
