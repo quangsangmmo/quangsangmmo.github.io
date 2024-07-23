@@ -1,43 +1,43 @@
-//VÀO LINK API BẤT KỲ VÀ LẤY AUTHORIZATION Ở PHẦN REQUEST > HEADERS
+//nhập url login, url này chỉ xuất hiện 1 lần ae phải chú ý,nếu không lấy được phải đợi khi token hết hạn mới lấy được lần 2
 [
   {
     "STT_ACCOUNT": "ACCCOUNT_1",
-    "AUTHORIZATION": "thay_thế_bằng_authorization"
+    "URL": "thay_thế_bằng_url"
   },
   {
     "STT_ACCOUNT": "ACCCOUNT_2",
-    "AUTHORIZATION": "thay_thế_bằng_authorization"
+    "URL": "thay_thế_bằng_url"
   },
   {
     "STT_ACCOUNT": "ACCCOUNT_3",
-    "AUTHORIZATION": "thay_thế_bằng_authorization"
+    "URL": "thay_thế_bằng_url"
   },
   {
     "STT_ACCOUNT": "ACCCOUNT_4",
-    "AUTHORIZATION": "thay_thế_bằng_authorization"
+    "URL": "thay_thế_bằng_url"
   },
   {
     "STT_ACCOUNT": "ACCCOUNT_5",
-    "AUTHORIZATION": "thay_thế_bằng_authorization"
+    "URL": "thay_thế_bằng_url"
   },
   {
     "STT_ACCOUNT": "ACCCOUNT_6",
-    "AUTHORIZATION": "thay_thế_bằng_authorization"
+    "URL": "thay_thế_bằng_url"
   },
   {
     "STT_ACCOUNT": "ACCCOUNT_7",
-    "AUTHORIZATION": "thay_thế_bằng_authorization"
+    "URL": "thay_thế_bằng_url"
   },
   {
     "STT_ACCOUNT": "ACCCOUNT_8",
-    "AUTHORIZATION": "thay_thế_bằng_authorization"
+    "URL": "thay_thế_bằng_url"
   },
   {
     "STT_ACCOUNT": "ACCCOUNT_9",
-    "AUTHORIZATION": "thay_thế_bằng_authorization"
+    "URL": "thay_thế_bằng_url"
   },
   {
     "STT_ACCOUNT": "ACCCOUNT_10",
-    "AUTHORIZATION": "thay_thế_bằng_authorization"
+    "URL": "thay_thế_bằng_url"
   }
 ]
