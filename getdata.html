@@ -1,98 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tạo DATA từ URL</title>
+    <title>Nhúng URL</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
+            margin: 20px;
         }
-
         .container {
-            background-color: #ffffff;
+            max-width: 800px;
+            margin: auto;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 5px;
         }
-
-        h1 {
-            margin-bottom: 20px;
-        }
-
-        input {
-            width: 80%;
+        input[type="text"] {
+            width: 100%;
             padding: 10px;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             border: 1px solid #ccc;
             border-radius: 4px;
         }
-
         button {
-            padding: 10px 20px;
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: #fff;
             border: none;
             border-radius: 4px;
-            background-color: #4CAF50;
-            color: white;
             cursor: pointer;
         }
-
         button:hover {
-            background-color: #45a049;
+            background-color: #0056b3;
         }
-
-        pre {
-            text-align: left;
-            background-color: #f4f4f4;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            white-space: pre-wrap;
-            word-wrap: break-word;
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>URL Decoder</h1>
-        <input type="text" id="urlInput" placeholder="Nhập URL ở đây">
-        <button onclick="decodeURL()">Decode URL</button>
-        <pre id="result"></pre>
+        <h1>Nhúng URL vào trang web</h1>
+        <input type="text" id="urlInput" placeholder="Nhập URL tại đây">
+        <button onclick="embedUrl()">Nhúng</button>
+        <div id="embedContainer">
+            <!-- iframe sẽ được chèn vào đây -->
+        </div>
     </div>
+
     <script>
-        function decodeURL() {
-            const urlInput = document.getElementById('urlInput').value;
-            const result = document.getElementById('result');
+        function embedUrl() {
+            var url = document.getElementById('urlInput').value;
+            var embedContainer = document.getElementById('embedContainer');
             
-            try {
-                const parsedUrl = new URL(urlInput);
-                const params = new URLSearchParams(parsedUrl.hash.slice(1));
-                const tgWebAppData = params.get('tgWebAppData');
-                const decodedData = decodeURIComponent(decodeURIComponent(tgWebAppData));
-                const queryParams = new URLSearchParams(decodedData);
-                const userData = queryParams.get('user');
-                const decodedUserData = decodeURIComponent(userData);
-                const userJson = JSON.parse(decodedUserData);
+            // Xóa nội dung cũ nếu có
+            embedContainer.innerHTML = '';
 
-                const resultJson = {
-                    uid: userJson.id,
-                    first_name: userJson.first_name,
-                    last_name: userJson.last_name || "",
-                    username: userJson.username,
-                    tg_login_params: tgWebAppData
-                };
+            // Tạo một iframe mới
+            var iframe = document.createElement('iframe');
+            iframe.src = url;
+            iframe.onload = function() {
+                console.log('Iframe đã được nhúng thành công!');
+            };
+            iframe.onerror = function() {
+                console.log('Có lỗi xảy ra khi nhúng URL.');
+            };
 
-                result.textContent = JSON.stringify(resultJson, null, 2);
-            } catch (error) {
-                result.textContent = 'Error decoding URL. Please check the input URL.';
-            }
+            // Thêm iframe vào trang
+            embedContainer.appendChild(iframe);
         }
     </script>
 </body>
